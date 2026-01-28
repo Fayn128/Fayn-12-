@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Fayn AI | 15+ Sun'iy Intellekt Platformasi | Dark Web ChatGPT Gemini Canva DeepSeek</title>
+    <meta name="description" content="Fayn AI - 15+ AI bilan chat: Dark Web ChatGPT, Gemini, Canva AI, GitHub Copilot, DeepSeek, Midjourney, DALL-E 3, Claude 3, Stable Diffusion va boshqalar. Bepul AI platformasi.">
+    <meta name="keywords" content="AI, Sun'iy Intellekt, Dark Web ChatGPT, Gemini, Canva AI, GitHub, DeepSeek, Midjourney, DALL-E, Claude, Stable Diffusion, AI chat, bepul AI">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fayn AI | 15+ Sun'iy Intellekt Platformasi">
+    <meta property="og:description" content="Dark Web ChatGPT, Gemini, Canva AI, GitHub Copilot va 15+ AI bilan chat qiling">
+    <meta property="og:type" content="website">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            /* Light theme */
+            --bg-color: #0a0a0a;
+            --text-color: #ffffff;
+            --card-bg: #1a1a1a;
+            --primary-color: #8a2be2;
+            --secondary-color: #00b4d8;
+            --accent-color: #ff6b6b;
+            --border-color: #333;
+            --hover-color: #2a2a2a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* ==================== NAVBAR ==================== */
+        .navbar {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 30px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .logo-text h1 {
+            font-size: 22px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo-text p {
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--card-bg);
+            padding: 8px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .user-id {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .online-status {
+            width: 8px;
+            height: 8px;
+            background: #00ff00;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .time-counter {
+            font-size: 12px;
+            color: #aaa;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* ==================== HERO SECTION ==================== */
+        .hero {
+            padding: 120px 30px 60px;
+            text-align: center;
+            background: linear-gradient(135deg, #000000, #1a0033);
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #ccc;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        .search-container {
+            max-width: 700px;
+            margin: 40px auto;
+            position: relative;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 18px 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid var(--border-color);
+            border-radius: 15px;
+            color: white;
+            font-size: 16px;
+            backdrop-filter: blur(10px);
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* ==================== AI GRID ==================== */
+        .ai-section {
+            padding: 60px 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .ai-categories {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .category-btn {
+            padding: 10px 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .category-btn.active {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-color: transparent;
+        }
+
+        .ai-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .ai-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.2);
+        }
+
+        .ai-card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .ai-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .ai-info h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .ai-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .ai-tag {
+            background: rgba(138, 43, 226, 0.2);
+            color: var(--primary-color);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+
+        .ai-description {
+            color: #ccc;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .ai-stats {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        .chat-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .chat-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+        }
+
+        /* ==================== CHAT INTERFACE ==================== */
+        .chat-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            backdrop-filter: blur(5px);
+        }
+
+        .chat-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 1000px;
+            height: 80vh;
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .chat-header {
+            background: rgba(138, 43, 226, 0.1);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .chat-ai-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .close-chat {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .chat-messages {
+            height: calc(100% - 140px);
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            max-width: 70%;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message.user {
+            margin-left: auto;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            padding: 12px 18px;
+            border-radius: 18px 18px 0 18px;
+        }
+
+        .message.ai {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 12px 18px;
+            border-radius: 18px 18px 18px 0;
+        }
+
+        .chat-input-area {
+            padding: 20px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            color: white;
+        }
+
+        .send-btn {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            padding: 15px 25px;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* ==================== ABOUT SECTION ==================== */
+        .about-section {
+            padding: 80px 30px;
+            background: rgba(138, 43, 226, 0.05);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .contact-info {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ==================== SETTINGS ==================== */
+        .settings-panel {
+            position: fixed;
+            right: -350px;
+            top: 0;
+            width: 350px;
+            height: 100%;
+            background: var(--card-bg);
+            border-left: 1px solid var(--border-color);
+            padding: 30px;
+            transition: right 0.3s;
+            z-index: 1001;
+        }
+
+        .settings-panel.open {
+            right: 0;
+        }
+
+        .settings-btn {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .ai-grid { grid-template-columns: 1fr; }
+            .about-content { grid-template-columns: 1fr; }
+            .settings-panel { width: 100%; right: -100%; }
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="logo-text">
+                <h1>FAYN AI</h1>
+                <p>15+ Sun'iy Intellekt Platformasi</p>
+            </div>
+        </div>
+
+        <div class="nav-controls">
+            <div class="time-counter">
+                <i class="fas fa-clock"></i>
+                <span id="sessionTime">00:00:00</span>
+            </div>
+            <div class="user-profile" onclick="toggleSettings()">
+                <div class="user-avatar">U</div>
+                <div>
+                    <div class="online-status"></div>
+                    <span class="user-id">ID: #</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero">
+        <h1>15+ Sun'iy Intellekt bilan Chat Qiling</h1>
+        <p>Dark Web ChatGPT, Gemini Pro, Canva AI, GitHub Copilot, DeepSeek, Midjourney, DALL-E 3, Claude 3 va boshqa AI modellar bilan bepul suhbat qiling. Fayl almashing, kod yozing, rasm yarating va ko'plab imkoniyatlardan foydalaning.</p>
+        
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="AI model nomi bo'yicha qidirish..." id="searchAI">
+            <button class="search-btn" onclick="searchAI()">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- ==================== AI MODELS SECTION ==================== -->
+    <section class="ai-section">
+        <h2 class="section-title">🤖 Mavjud AI Modellar</h2>
+        
+        <div class="ai-categories">
+            <button class="category-btn active" onclick="filterAI('all')">Hammasi</button>
+            <button class="category-btn" onclick="filterAI('chat')">Chat AI</button>
+            <button class="category-btn" onclick="filterAI('image')">Rasm AI</button>
+            <button class="category-btn" onclick="filterAI('code')">Kod AI</button>
+            <button class="category-btn" onclick="filterAI('video')">Video AI</button>
+        </div>
+
+        <div class="ai-grid" id="aiGrid">
+            <!-- Dark Web ChatGPT -->
+            <div class="ai-card" data-category="chat">
+                <div class="ai-card-header">
+                    <div class="ai-icon" style="background: linear-gradient(45deg, #000000, #8b0000);">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <div class="ai-info">
+                        <h3>Dark Web ChatGPT</h3>
+                        <div class="ai-tags">
+                            <span class="ai-tag">Maxfiy</span>
+                            <span class="ai-tag">No Filter</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="ai-description">Maxfiy ChatGPT versiyasi - filtrlar yo'q, cheklovlar yo'q. Barcha mavzularda bepul suhbat.</p>
+                <div class="ai-stats">
+                    <span><i class="fas fa-bolt"></i> Tezkor</span>
+                    <span><i class="fas fa-shield-alt"></i> Anonim</span>
+                    <span><i class="fas fa-star"></i> 4.9/5</span>
+                </div>
+                <button class="chat-btn" onclick="openChat('Dark Web ChatGPT')">
+                    <i class="fas fa-comment"></i> Chat Qilish
+                </button>
+            </div>
+
+            <!-- Gemini Pro -->
+            <div class="ai-card" data-category="chat">
+                <div class="ai-card-header">
+                    <div class="ai-icon" style="background: linear-gradient(45deg, #4285f4, #34a853);">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="ai-info">
+                        <h3>Gemini Pro</h3>
+                        <div class="ai-tags">
+                            <span class="ai-tag">Google</span>
+                            <span class="ai-tag">Multimodal</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="ai-description">Google tomonidan yaratilgan ko'p modaliteli AI. Rasm, video, audio tahlili va real-time ma'lumotlar.</p>
+                <div class="ai-stats">
+                    <span><i class="fas fa-images"></i> Rasm tahlili</span>
+                    <span><i class="fas fa-globe"></i> Internet</span>
+                    <span><i class="fas fa-star"></i> 4.8/5</span>
+                </div>
+                <button class="chat-btn" onclick="openChat('Gemini Pro')">
+                    <i class="fas fa-comment"></i> Chat Qilish
+                </button>
+            </div>
+
+            <!-- Canva AI -->
+            <div class="ai-card" data-category="image">
+                <div class="ai-card-header">
+                    <div class="ai-icon" style="background: linear-gradient(45deg, #00c4cc, #7d00ff);">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="ai-info">
+                        <h3>Canva AI</h3>
+                        <div class="ai-tags">
+                            <span class="ai-tag">Dizayn</span>
+                            <span class="ai-tag">Rasm</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="ai-description">Professional dizaynlar yaratish uchun AI. Banner, poster, logo va grafikalar bir necha daqiqada.</p>
+                <div class="ai-stats">
+                    <span><i class="fas fa-magic"></i> Avtomatik</span>
+                    <span><i class="fas fa-templates"></i> 500+ Template</span>
+                    <span><i class="fas fa-star"></i> 4.7/5</span>
+                </div>
+                <button class="chat-btn" onclick="openChat('Canva AI')">
+                    <i class="fas fa-comment"></i> Chat Qilish
+                </button>
+            </div>
+
+            <!-- GitHub Copilot -->
+            <div class="ai-card" data-category="code">
+                <div class="ai-card-header">
+                    <div class="ai-icon" style="background: linear-gradient(45deg, #4078c0, #6cc644);">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="ai-info">
+                        <h3>GitHub Copilot</h3>
+                        <div class="ai-tags">
+                            <span class="ai-tag">Kodlash</span>
+                            <span class="ai-tag">Debug</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="ai-description">Microsoft va GitHub tomonidan yaratilgan AI kod yordamchisi. 20+ dasturlash tili uchun kod generatsiyasi.</p>
+                <div class="ai-stats">
+                    <span><i class="fas fa-code"></i> 20+ Til</span>
+                    <span><i class="fas fa-bug"></i> Debug</span>
+                    <span><i class="fas fa-star"></i> 4.9/5</span>
+                </div>
+                <button class="chat-btn" onclick="openChat('GitHub Copilot')">
+                    <i class="fas fa-comment"></i> Chat Qilish
+                </button>
+            </div>
+
+            <!-- DeepSeek -->
+            <div class="ai-card" data-category="chat">
+                <div class="ai-card-header">
+                    <div class="ai-icon" style="background: linear-gradient(45deg, #00a8ff, #9c88ff);">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="ai-info">
+                        <h3>DeepSeek V3</h3>
+                        <div class="ai-tags">
+                            <span class="ai-tag">Bepul</span>
+                            <span class="ai-tag">128K Kontekst</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="ai-description">Depth Seek kompaniyasining bepul va ochiq manbali AI. Kodlash, matematika, tadqiqot uchun ideal.</p>
+                <div class="ai-stats">
+                    <span><i class="fas fa-infinity"></i> Cheksiz</span>
+                    <span><i class="fas fa-file-alt"></i> Hujjatlar</span>
+                    <span><i class="fas fa-star"></i> 4.6/5</span>
+                </div>
+                <button class="chat-btn" onclick="openChat('DeepSeek')">
+                    <i class="fas fa-comment"></i> Chat Qilish
+                </button>
+            </div>
+
+            <!-- Midjourney -->
+            <div class="ai-card" data-category="image">
+                <div class="ai-card-header">
+                    <div class="ai-icon" style="background: linear-gradient(45deg, #000000, #5865f2);">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="ai-info">
+                        <h3>Midjourney</h3>
+                        <div class="ai-tags">
+                            <span class="ai-tag">Rasm</span>
+                            <span class="ai-tag">San'at</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="ai-description">Yuqori sifatli rasm generatsiyasi AI. Fotorealistik tasvirlar, san'at asarlari, dizaynlar.</p>
+                <div class="ai-stats">
+                    <span><i class="fas fa-camera"></i> HD Tasvir</span>
+                    <span><i class="fas fa-paint-brush"></i> 50+ Uslub</span>
+                    <span><i class="fas fa-star"></i> 4.8/5</span>
+                </div>
+                <button class="chat-btn" onclick="openChat('Midjourney')">
+                    <i class="fas fa-comment"></i> Chat Qilish
+                </button>
+            </div>
+
+            <!-- Claude 3 -->
+            <div class="ai-card" data-category="chat">
+                <div class="ai-card-header">
+                    <div class="ai-icon" style="background: linear-gradient(45deg, #8b4513, #d2691e);">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="ai-info">
+                        <h3>Claude 3</h3>
+                        <div class="ai-tags">
+                            <span class="ai-tag">Xavfsiz</span>
+                            <span class="ai-tag">200K Token</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="ai-description">Anthropic tomonidan yaratilgan xavfsiz AI. Uzun hujjatlar tahlili, biznes yozuvlari.</p>
+                <div class="ai-stats">
+                    <span><i class="fas fa-shield-alt"></i> Xavfsiz</span>
+                    <span><i class="fas fa-file"></i> Hujjatlar</span>
+                    <span><i class="fas fa-star"></i> 4.7/5</span>
+                </div>
+                <button class="chat-btn" onclick="openChat('Claude 3')">
+                    <i class="fas fa-comment"></i> Chat Qilish
+                </button>
+            </div>
+
+            <!-- Stable Diffusion -->
+            <div class="ai-card" data-category="image">
+                <div class="ai-card-header">
+                    <div class="ai-icon" style="background: linear-gradient(45deg, #000000, #ff6b6b);">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="ai-info">
+                        <h3>Stable Diffusion</h3>
+                        <div class="ai-tags">
+                            <span class="ai-tag">Ochiq manba</span>
+                            <span class="ai-tag">Custom</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="ai-description">Ochiq manbali rasm generatsiyasi AI. Turli parametrlar, modellar va sozlash imkoniyatlari.</p>
+                <div class="ai-stats">
+                    <span><i class="fas fa-code-branch"></i> Open Source</span>
+                    <span><i class="fas fa-sliders-h"></i> Sozlash</span>
+                    <span><i class="fas fa-star"></i> 4.5/5</span>
+                </div>
+                <button class="chat-btn" onclick="openChat('Stable Diffusion')">
+                    <i class="fas fa-comment"></i> Chat Qilish
+                </button>
+            </div>
+
+            <!-- DALL-E 3 -->
+            <div class="ai-card" data-category="image">
+                <div class="ai-card-header">
+                    <div class="ai-icon" style="background: linear-gradient(45deg, #10a37f, #00d4aa);">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="ai-info">
+                        <h3>DALL-E 3</h3>
+                        <div class="ai-tags">
+                            <span class="ai-tag">OpenAI</span>
+                            <span class="ai-tag">Yuqori sifat</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="ai-description">OpenAI tomonidan yaratilgan eng yaxshi rasm generatsiyasi AI. Text-to-image texnologiyasi.</p>
+                <div class="ai-stats">
+                    <span><i class="fas fa-gem"></i> Premium</span>
+                    <span><i class="fas fa-text-height"></i> Text-to-Image</span>
+                    <span><i class="fas fa-star"></i> 4.8/5</span>
+                </div>
+                <button class="chat-btn" onclick="openChat('DALL-E 3')">
+                    <i class="fas fa-comment"></i> Chat Qilish
+                </button>
+            </div>
+
+            <!-- Suno AI (Musiqa) -->
+            <div class="ai-card" data-category="audio">
+                <div class="ai-card-header">
+                    <div class="ai-icon" style="background: linear-gradient(45deg, #ff6b6b, #ffa500);">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="ai-info">
+                        <h3>Suno AI</h3>
+                        <div class="ai-tags">
+                            <span class="ai-tag">Musiqa</span>
+                            <span class="ai-tag">Audio</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="ai-description">Musiqa va qo'shiq yaratish AI. Turli janrlar, vokal generatsiyasi, musiqa kompozitsiyasi.</p>
+                <div class="ai-stats">
+                    <span><i class="fas fa-headphones"></i> Audio</span>
+                    <span><i class="fas fa-microphone"></i> Vokal</span>
+                    <span><i class="fas fa-star"></i> 4.4/5</span>
+                </div>
+                <button class="chat-btn" onclick="openChat('Suno AI')">
+                    <i class="fas fa-comment"></i> Chat Qilish
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about-section">
+        <h2 class="section-title">👨‍💻 Biz Haqimizda</h2>
+        
+        <div class="about-content">
+            <div>
+                <h3 style="font-size: 28px; margin-bottom: 20px;">Fayn AI Platformasi</h3>
+                <p style="color: #ccc; line-height: 1.8; margin-bottom: 30px;">
+                    Fayn AI - 15+ sun'iy intellekt modelini bitta platformada jamlagan innovatsion chat platformasi. 
+                    Bizning maqsad - har bir odamga eng yaxshi AI texnologiyalarini bepul va oddiy tarzda taqdim etish.
+                </p>
+                <p style="color: #ccc; line-height: 1.8;">
+                    Platforma 2024-yilda ochilgan va allaqachon 5000+ foydalanuvchiga xizmat ko'rsatmoqda. 
+                    Biz xavfsizlik, maxfiylik va qulaylikka alohida e'tibor qaratamiz.
+                </p>
+            </div>
+            
+            <div class="contact-info">
+                <h3 style="margin-bottom: 25px;">📞 Bog'lanish</h3>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <p style="color: #aaa; font-size: 14px;">Email</p>
+                        <p style="font-weight: bold;">abdulvorsa@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <p style="color: #aaa; font-size: 14px;">Telefon</p>
+                        <p style="font-weight: bold;">+998 99 057 69 10</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <div>
+                        <p style="color: #aaa; font-size: 14px;">Telegram</p>
+                        <p style="font-weight: bold;">@Abuokeng11</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CHAT MODAL ==================== -->
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-ai-info">
+                    <div class="ai-icon" id="chatAIcon" style="width: 40px; height: 40px; font-size: 18px;"></div>
+                    <div>
+                        <h3 id="chatAITitle">AI Model</h3>
+                        <p style="color: #aaa; font-size: 14px;" id="chatAIType">AI Type</p>
+                    </div>
+                </div>
+                <button class="close-chat" onclick="closeChat()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be added here -->
+            </div>
+            
+            <div class="chat-input-area">
+                <input type="text" class="chat-input" placeholder="Xabar yozing..." id="chatInput">
+                <button class="send-btn" onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== SETTINGS PANEL ==================== -->
+    <div class="settings-panel" id="settingsPanel">
+        <h3 style="margin-bottom: 30px;">⚙️ Sozlamalar</h3>
+        
+        <div style="margin-bottom: 25px;">
+            <h4 style="margin-bottom: 15px;">🌐 Til</h4>
+            <select id="languageSelect" style="width: 100%; padding: 10px; background: rgba(255,255,255,0.05); border: 1px solid var(--border-color); color: white; border-radius: 8px;">
+                <option value="uz">O'zbekcha</option>
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        
+        <div style="margin-bottom: 25px;">
+            <h4 style="margin-bottom: 15px;">👤 Profil</h4>
+            <div style="background: rgba(255,255,255,0.03); padding: 15px; border-radius: 10px;">
+                <p style="color: #aaa; font-size: 12px;">Foydalanuvchi ID:</p>
+                <p id="userID" style="font-weight: bold; font-size: 18px; margin: 5px 0 15px;">#0000</p>
+                <button onclick="generateNewID()" style="width: 100%; padding: 10px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); border: none; border-radius: 8px; color: white; cursor: pointer;">
+                    Yangi ID olish
+                </button>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 25px;">
+            <h4 style="margin-bottom: 15px;">📊 Statistikalar</h4>
+            <div style="background: rgba(255,255,255,0.03); padding: 15px; border-radius: 10px;">
+                <p style="color: #aaa; font-size: 12px;">Sessiya vaqti:</p>
+                <p id="sessionTimeStat" style="font-weight: bold; margin: 5px 0 10px;">00:00:00</p>
+                <p style="color: #aaa; font-size: 12px;">Chatlar soni:</p>
+                <p style="font-weight: bold; margin: 5px 0;">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="settings-btn" onclick="toggleSettings()">
+        <i class="fas fa-cog"></i>
+    </div>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        // Session time counter
+        let sessionSeconds = 0;
+        let sessionInterval;
+        
+        function startSessionTimer() {
+            sessionInterval = setInterval(() => {
+                sessionSeconds++;
+                updateSessionTime();
+            }, 1000);
+        }
+        
+        function updateSessionTime() {
+            const hours = Math.floor(sessionSeconds / 3600);
+            const minutes = Math.floor((sessionSeconds % 3600) / 60);
+            const seconds = sessionSeconds % 60;
+            
+            const timeString = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            document.getElementById('sessionTime').textContent = timeString;
+            document.getElementById('sessionTimeStat').textContent = timeString;
+        }
+        
+        // User ID management
+        function generateUserID() {
+            if (!localStorage.getItem('userID')) {
+                const id = '#' + Math.floor(1000 + Math.random() * 9000);
+                localStorage.setItem('userID', id);
+            }
+            document.getElementById('userID').textContent = localStorage.getItem('userID');
+            document.querySelector('.user-id').textContent = 'ID: ' + localStorage.getItem('userID');
+        }
+        
+        function generateNewID() {
+            const id = '#' + Math.floor(1000 + Math.random() * 9000);
+            localStorage.setItem('userID', id);
+            document.getElementById('userID').textContent = id;
+            document.querySelector('.user-id').textContent = 'ID: ' + id;
+        }
+        
+        // AI Search and Filter
+        function searchAI() {
+            const searchTerm = document.getElementById('searchAI').value.toLowerCase();
+            const aiCards = document.querySelectorAll('.ai-card');
+            
+            aiCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('.ai-description').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        function filterAI(category) {
+            const buttons = document.querySelectorAll('.category-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            const aiCards = document.querySelectorAll('.ai-card');
+            
+            aiCards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    const cardCategory = card.getAttribute('data-category');
+                    card.style.display = cardCategory === category ? 'block' : 'none';
+                }
+            });
+        }
+        
+        // Chat functionality
+        let currentAI = '';
+        
+        function openChat(aiName) {
+            currentAI = aiName;
+            document.getElementById('chatModal').style.display = 'block';
+            document.getElementById('chatAITitle').textContent = aiName;
+            
+            // Set icon based on AI
+            const icon = document.getElementById('chatAIcon');
+            icon.innerHTML = getAIIcon(aiName);
+            
+            // Clear chat
+            document.getElementById('chatMessages').innerHTML = '';
+            
+            // Add welcome message
+            const welcomeMsg = document.createElement('div');
+            welcomeMsg.className = 'message ai';
+            welcomeMsg.textContent = getWelcomeMessage(aiName);
+            document.getElementById('chatMessages').appendChild(welcomeMsg);
+            
+            // Focus input
+            document.getElementById('chatInput').focus();
+        }
+        
+        function closeChat() {
+            document.getElementById('chatModal').style.display = 'none';
+        }
+        
+        function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            // Add user message
+            const userMsg = document.createElement('div');
+            userMsg.className = 'message user';
+            userMsg.textContent = message;
+            document.getElementById('chatMessages').appendChild(userMsg);
+            
+            // Clear input
+            input.value = '';
+            
+            // Simulate AI response
+            setTimeout(() => {
+                const aiMsg = document.createElement('div');
+                aiMsg.className = 'message ai';
+                aiMsg.textContent = getAIResponse(currentAI, message);
+                document.getElementById('chatMessages').appendChild(aiMsg);
+                
+                // Scroll to bottom
+                const chatContainer = document.getElementById('chatMessages');
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }, 1000);
+        }
+        
+        function getAIIcon(aiName) {
+            const icons = {
+                'Dark Web ChatGPT': '<i class="fas fa-user-secret"></i>',
+                'Gemini Pro': '<i class="fab fa-google"></i>',
+                'Canva AI': '<i class="fas fa-palette"></i>',
+                'GitHub Copilot': '<i class="fab fa-github"></i>',
+                'DeepSeek': '<i class="fas fa-brain"></i>',
+                'Midjourney': '<i class="fas fa-crown"></i>',
+                'Claude 3': '<i class="fas fa-leaf"></i>',
+                'Stable Diffusion': '<i class="fas fa-fire"></i>',
+                'DALL-E 3': '<i class="fas fa-robot"></i>',
+                'Suno AI': '<i class="fas fa-music"></i>'
+            };
+            return icons[aiName] || '<i class="fas fa-robot"></i>';
+        }
+        
+        function getWelcomeMessage(aiName) {
+            const messages = {
+                'Dark Web ChatGPT': 'Salom! Men Dark Web ChatGPT. Har qanday mavzuda bepul va cheklovlarsiz suhbat qilamiz. Nima haqida gaplashamiz?',
+                'Gemini Pro': 'Assalomu alaykum! Men Gemini Pro. Rasm, video, audio va matn bilan ishlayman. Qanday yordam bera olaman?',
+                'Canva AI': 'Salom! Men Canva AI. Dizayn va grafikalar yaratishda yordam beraman. Qanday dizayn kerak?',
+                'GitHub Copilot': 'Hello! Men GitHub Copilot. Dasturlash va kod yozishda yordam beraman. Qaysi tilda kod yozamiz?',
+                'DeepSeek': 'Salom! Men DeepSeek. Bepul AI yordamchisi. Matematika, kodlash, tadqiqot - hamma narsaga yordam bera olaman.',
+                'Midjourney': 'Hello! Men Midjourney. Yuqori sifatli rasmlar yaratishda yordam beraman. Qanday rasm kerak?',
+                'Claude 3': 'Salom! Men Claude 3. Xavfsiz va uzun matnlar bilan ishlayman. Qanday yordam kerak?',
+                'Stable Diffusion': 'Hi! Men Stable Diffusion. Ochiq manbali rasm generatsiyasi AI. Parametrlarni sozlab, istalgan rasmni yaratamiz.',
+                'DALL-E 3': 'Hello! Men DALL-E 3. OpenAI tomonidan yaratilgan rasm generatsiyasi AI. Matndan yuqori sifatli rasmlar yarataman.',
+                'Suno AI': 'Salom! Men Suno AI. Musiqa va qo'shiqlar yaratishda yordam beraman. Qanday musiqa kerak?'
+            };
+            return messages[aiName] || 'Salom! Men AI yordamchi. Qanday yordam bera olaman?';
+        }
+        
+        function getAIResponse(aiName, userMessage) {
+            const responses = {
+                'Dark Web ChatGPT': [
+                    'Qiziq fikr! Dark Web versiyasida barcha mavzular ochiq.',
+                    'Bu haqda bepul gaplashamiz. Hech qanday cheklov yo\'q.',
+                    'Maxfiy ma\'lumotlar uchun ham yordam bera olaman.',
+                    'Filtrlar yo\'q, shuning uchun to\'liq erkin suhbat.'
+                ],
+                'Gemini Pro': [
+                    'Google ma\'lumotlariga asoslangan javob beraman.',
+                    'Rasm yuborsangiz, uni tahlil qilaman.',
+                    'Real-time ma\'lumotlar bilan javob beraman.',
+                    'Ko\'p modaliteli yordamchi sifatida ishlayman.'
+                ],
+                'Canva AI': [
+                    'Bu dizayn uchun quyidagi template\'ni tavsiya qilaman.',
+                    'Rang palitrasini shunday tanlash mumkin...',
+                    'Font va layout bo\'yicha maslahat beraman.',
+                    'Professional dizayn yaratishda yordam beraman.'
+                ],
+                'GitHub Copilot': [
+                    'Kodni optimallashtiraman va xatolarni tuzataman.',
+                    '20+ dasturlash tilida kod yozishda yordam beraman.',
+                    'Debug qilish va kod tahlil qilishda yordamchi.',
+                    'Eng yaxshi amaliyotlarni taklif qilaman.'
+                ]
+            };
+            
+            const aiResponses = responses[aiName] || [
+                'Tushundim! Batafsilroq aytib bering.',
+                'Qiziq savol! Bunga javob berish uchun...',
+                'Men AI sifatida quyidagicha javob beraman...',
+                'Rahmat savolingiz uchun! Menimcha...'
+            ];
+            
+            return aiResponses[Math.floor(Math.random() * aiResponses.length)];
+        }
+        
+        // Settings panel
+        function toggleSettings() {
+            const panel = document.getElementById('settingsPanel');
+            panel.classList.toggle('open');
+        }
+        
+        // Language settings
+        document.getElementById('languageSelect').addEventListener('change', function() {
+            const lang = this.value;
+            // Here you would implement language switching logic
+            alert('Til o\'zgartirildi: ' + (lang === 'uz' ? 'O\'zbekcha' : lang === 'ru' ? 'Русский' : 'English'));
+        });
+        
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', function() {
+            generateUserID();
+            startSessionTimer();
+            
+            // Enter key for chat
+            document.getElementById('chatInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') sendMessage();
+            });
+            
+            // Search on Enter
+            document.getElementById('searchAI').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') searchAI();
+            });
+            
+            // Close modal on outside click
+            document.getElementById('chatModal').addEventListener('click', function(e) {
+                if (e.target === this) closeChat();
+            });
+        });
+    </script>
+</body>
+</html>
